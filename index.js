@@ -1,7 +1,7 @@
 
-var repred = requrie('repred')
+var repred = require('repred')
 
-modules.exports = function (db) {
+module.exports = function (db) {
   var args = [].slice.call(arguments)
   var db = args.shift()
   var _rr = repred.apply(null, args)
