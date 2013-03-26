@@ -5,7 +5,7 @@ module.exports = function (db) {
   var args = [].slice.call(arguments)
   var db = args.shift()
   var _rr = repred.apply(null, args)
-  var rr  = repred.apple(null, args)
+  var rr  = repred.apply(null, args)
 
   //keep a real time reduce of the db,
   //rerun the query when the process starts.
